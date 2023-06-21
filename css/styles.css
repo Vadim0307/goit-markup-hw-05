@@ -702,32 +702,26 @@ body {
         resize: none;   
     }
 
-    .modal-input:focus {
-        border-color: var(--primary-brand-color);
-    }
-    .modal-input:focus + .input-icon {
-        fill: var(--primary-brand-color);
-    }
-
-    .modal-textarea:focus {
-        border-color: var(--primary-brand-color);
-    }
-
     .modal-field-policy {
+        margin-top: 11px;
         margin-bottom: 24px;
+        margin-left: 24px;
     }
 
     .check-text {
+        font-style: 'Roboto';
+        font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-        color: var(--subtle-text-color);
+        color: var(--border-color);
+        display: flex;
         align-items: center;
     }
     .check-text a {
         line-height: 1.33;
         text-decoration: underline;
-        color: var(--primary-brand-color);
+        color: var(--logo-color);
         align-items: center;
     }
     .check-text span {
@@ -736,20 +730,20 @@ body {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
         margin-right: 8px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color var(--transition), border var(--transition), fill var(--transition);
     }
     .input-check:checked + .check-text span {
         border: none;
-        background-color: var(--pressed-state-color);
-        fill: var(--light-color);
+        background-color: var(--link-color);
+        fill: var(--backgr-color);
     }
-    .input-check:focus + .check-text span {
-        border-color: var(--pressed-state-color);
 
+    .input-check:focus + .check-text span {
+        border-color: var(--link-color);
     }
 
 
@@ -763,13 +757,13 @@ body {
         
     }
     .modal-send-btn {     
-        background-color: var(--primary-brand-color);
+        background-color: var(--logo-color);
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.04em;
-        color: var(--background-color);
+        color: var(--white-color);
         cursor: pointer;
         display: block;
         padding: 16px 32px;
@@ -780,8 +774,9 @@ body {
         transition: background-color var(--transition);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
     .modal-send-btn:is(:hover, :focus) {
-        background-color: var(--pressed-state-color);
+        background-color: var(--link-color);
     }
 
     

@@ -675,31 +675,17 @@ body {
         background-color: transparent;
         outline: transparent;
         transition: border-color var(--transition);
-       
-        /* padding: 0; */
-        /* padding-left: 38px;
-        padding-right: 34px; */
-       
-       
-        
-        
     }
-    .modal-input:focus {
-        border-color: var(--primary-brand-color);
-    }
-
-   
+  
     .input-icon {
         position: absolute;
         left: 16px;
         top: 50%;
+        stroke: var(--title-color);
         transform: translateY(-50%);
-        fill: var(--dark-color); 
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill var(--transition);
     }
-    .modal-input:focus + .input-icon {
-        fill: var(--primary-brand-color);
-    }
+
     .modal-textarea {
         font-size: 12px;
         line-height: 1.17;
@@ -714,14 +700,17 @@ body {
         outline: transparent;
         transition: border-color var(--transition);
         resize: none;   
-        
-    }
-    .modal-textarea:focus {
-        border-color: var(--primary-brand-color);
     }
 
-    .modal-field-text {
-        margin-bottom: 16px;
+    .modal-input:focus {
+        border-color: var(--primary-brand-color);
+    }
+    .modal-input:focus + .input-icon {
+        fill: var(--primary-brand-color);
+    }
+
+    .modal-textarea:focus {
+        border-color: var(--primary-brand-color);
     }
 
     .modal-field-policy {

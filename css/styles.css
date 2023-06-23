@@ -558,6 +558,7 @@ body {
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: var(--white-color);
+        padding-left: 16px;
         /* outline: transparent;
         display: flex;
         align-items: center; */
@@ -589,18 +590,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        /* margin: 0 auto;
-        flex-direction: row;
-        transition: background-color var(--transition); */
+        /* margin: 0 auto; */
+        /* flex-direction: row; */
+        transition: background-color var(--transition);
     }
     
     .subscribe-icon {
         fill: var(--white-color);
         margin-left: 16px;
-        /* display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        position: relative; */
     }
 
     .subscribe-btn:is(:hover, :focus) {
@@ -608,9 +605,6 @@ body {
     }
     
     
-    
-
-
 
     /**--------MODAL Windows---------*/
 
@@ -721,7 +715,7 @@ body {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--border-color);
-        display: inline-block; 
+        display: block; 
         margin-bottom: 4px;
     }
 
@@ -730,23 +724,40 @@ body {
     }
       
     .modal-input {
-        width: 100%;
-        height: 40px;
-        box-sizing: border-box;
-        border: 1px solid rgba(46, 47, 66, 0.4);
-        border-radius: 4px;
-        background-color: transparent;
-        outline: transparent;
-        transition: border-color var(--transition);
+          width: 100%;
+          height: 40px;
+          border: 1px solid rgba(46, 47, 66, 0.4);
+          border-radius: 4px;
+          background-color: transparent;
+          padding-left: 38px;
+          outline: transparent;
+          transition: border-color var(--transition);
     }
-  
+    
+    .modal-input:focus {
+        border-color: var(--logo-color);
+    }
+
+    .modal-input:focus + .input-icon {
+        fill: var(--logo-color);
+    }
+
     .input-icon {
         position: absolute;
         left: 16px;
         top: 50%;
-        stroke: var(--title-color);
+        /* fill: transparent; */
         transform: translateY(-50%);
         transition: fill var(--transition);
+        stroke: var(--title-color);
+    }
+
+    .input-icon:focus {
+        fill: var(--logo-color)
+    }
+
+    .modal-field-placeholder {
+        margin-bottom: 16px;
     }
 
     .modal-textarea {
@@ -765,10 +776,24 @@ body {
         resize: none;   
     }
 
+    .modal-textarea:focus {
+        border-color: var(--logo-color);
+    }
+
     .modal-field-policy {
         margin-top: 11px;
         margin-bottom: 24px;
         margin-left: 24px;
+    }
+
+    .input-check:checked + .check-text span {
+        background-color: var(--link-color);
+        border: none;
+        fill: var(--backgr-color);
+    }
+
+    .input-check:focus + .check-text span {
+        border-color: var(--logo-color);
     }
 
     .check-text {
@@ -781,12 +806,14 @@ body {
         display: flex;
         align-items: center;
     }
+
     .check-text a {
         line-height: 1.33;
         text-decoration: underline;
         color: var(--logo-color);
         align-items: center;
     }
+
     .check-text span {
         width: 16px;
         height: 16px;
@@ -799,34 +826,43 @@ body {
         fill: transparent;
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
     }
-    .input-check:checked + .check-text span {
-        border: none;
-        background-color: var(--link-color);
-        fill: var(--backgr-color);
+    
+    .check-user-policy {
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgha(46, 47, 66, 0.4);
+        border-radius: 2px;
+        transition: background-color var(--transition), border var(--transition), fill var(--transition);
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+        margin-right: 8px;
     }
 
-    .input-check:focus + .check-text span {
-        border-color: var(--link-color);
+    .modal-policy-link {
+        color: var(--logo-color);
     }
-
-  
+    
     .modal-send-btn {     
-        background-color: var(--logo-color);
-        font-family: inherit;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: var(--white-color);
-        cursor: pointer;
-        display: block;
-        padding: 16px 32px;
-        margin: 0 auto;
-        border: none;
-        min-width: 169px;
-        border-radius: 4px;
-        transition: background-color var(--transition);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            background-color: var(--logo-color);
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.04em;
+            color: var(--white-color);
+            cursor: pointer;
+            display: block;
+            border: none;
+            min-width: 169px;
+            height: 56px;
+            border-radius: 4px;
+            transition: background-color var(--transition);
+            text-align: center;
+            padding: 16px 32px;
+            margin: 0 auto;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 
     .modal-send-btn:is(:hover, :focus) {

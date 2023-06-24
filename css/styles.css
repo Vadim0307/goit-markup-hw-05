@@ -595,10 +595,11 @@ body {
         transition: background-color var(--transition);
     }
     
-    .subscribe-icon {
-        fill: var(--white-color);
+    .subcribe-icon {
         margin-left: 16px;
+        fill: var(--white-color);
     }
+    
 
     .subscribe-btn:is(:hover, :focus) {
         background-color: var(--link-color);
@@ -633,6 +634,7 @@ body {
         background: #fcfcfc;
         border-radius: 4px;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 72px 24px 24px;
     }
 
     .modal-btn {
@@ -708,6 +710,10 @@ body {
         margin-right: 22px;
     }
 
+    .modal-field-placeholder {
+        margin-bottom: 16px;
+    }
+
     .modal-label {
         font-family: 'Roboto';
         font-weight: 400;
@@ -780,7 +786,7 @@ body {
         border-color: var(--logo-color);
     }
 
-    .modal-field-policy {
+    .modal-privacy {
         margin-top: 11px;
         margin-bottom: 24px;
         margin-left: 24px;
@@ -827,20 +833,20 @@ body {
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
     }
     
-    .check-user-policy {
+    .user-privacy-text {
         width: 16px;
         height: 16px;
         border: 1px solid rgha(46, 47, 66, 0.4);
         border-radius: 2px;
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
-        display: inline-block;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
         margin-right: 8px;
     }
 
-    .modal-policy-link {
+    .user-privacy-link {
         color: var(--logo-color);
     }
     

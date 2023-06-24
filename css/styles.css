@@ -820,7 +820,7 @@ body {
         align-items: center;
     }
 
-    .check-text span {
+    /* .check-text span {
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
@@ -831,7 +831,7 @@ body {
         justify-content: center;
         fill: transparent;
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
-    }
+    } */
     
     .user-privacy-text {
         width: 16px;

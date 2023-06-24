@@ -820,20 +820,20 @@ body {
         align-items: center;
     }
 
-    /* .check-text span {
+    .check-text span {
         width: 16px;
         height: 16px;
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 2px;
         margin-right: 8px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         fill: transparent;
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
-    } */
+    }
     
-    .user-privacy-text {
+    /* .user-privacy-text {
         width: 16px;
         height: 16px;
         border: 1px solid rgha(46, 47, 66, 0.4);
@@ -844,7 +844,7 @@ body {
         justify-content: center;
         fill: transparent;
         margin-right: 8px;
-    }
+    } */
 
     .user-privacy-link {
         color: var(--logo-color);

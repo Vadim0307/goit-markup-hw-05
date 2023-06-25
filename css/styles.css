@@ -688,26 +688,19 @@ body {
    /**-----------FORMU vvedennya---------------*/
 
    .modal-title {
-        font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--title-color);
-        max-width: 360px;
-        height: 24px;
-        margin-top: 72px;
         margin-bottom: 16px;
-        margin-left: 24px;
     }
 
     .modal-form {}
 
     .modal-field {
         margin-bottom: 8px;
-        margin-left: 26px;
-        margin-right: 22px;
     }
 
     .modal-field-placeholder {
@@ -752,10 +745,9 @@ body {
         position: absolute;
         left: 16px;
         top: 50%;
-        /* fill: transparent; */
+        fill: var(--title-color);
         transform: translateY(-50%);
         transition: fill var(--transition);
-        stroke: var(--title-color);
     }
 
     .input-icon:focus {
@@ -787,9 +779,7 @@ body {
     }
 
     .modal-privacy {
-        margin-top: 11px;
         margin-bottom: 24px;
-        margin-left: 24px;
     }
 
     .input-check:checked + .check-text span {
@@ -830,19 +820,6 @@ body {
         transition: background-color var(--transition), border var(--transition), fill var(--transition);
     }
     
-    /* .user-privacy-text {
-        width: 16px;
-        height: 16px;
-        border: 1px solid rgha(46, 47, 66, 0.4);
-        border-radius: 2px;
-        transition: background-color var(--transition), border var(--transition), fill var(--transition);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        fill: transparent;
-        margin-right: 8px;
-    } */
-
     .user-privacy-link {
         color: var(--logo-color);
     }
@@ -876,10 +853,7 @@ body {
 
     /**---PORTFOLIO------Header---------*/
     
-    /* .header-menu-link {
-        color: var(--link-color);
-    } */
-        
+           
     /**---PORTFOLIO------Block1------------*/
 
         
